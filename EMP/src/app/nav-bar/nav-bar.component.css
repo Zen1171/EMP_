@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Lyyra';
+  src: local('Lyyra Extended-Bold'), local('Lyyra-Extended-Bold'),
+      url('src/assets/Fonts/LyyraExtended-Bold.woff2') format('woff2'),
+      url('src/assets/Fonts/LyyraExtended-Bold.woff') format('woff'),
+      url('src/assets/Fonts/LyyraExtended-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navbar{
+  font-family: Lyyra;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+img{
+  height:4%;
+  width:4%;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  padding: 0 5 0 5;
+  /* padding: 10 0 10 0; */
+}
+
+.links li a{
+  margin: 40px;
+  font-size: 18px;
+}
+
+.links li a:hover{
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.register{
+  display: flex;
+  width: 185.714px;
+  height: 53.061px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.svg-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-over-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: white; /* Set the color of the text */
+}
+
+
+ul li a{
+  color: #292929;
+  text-align: center;
+  font-family: Lyyra;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.register a{
+  color: #000000;
+  text-align: center;
+  font-family: Lyyra;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* .container img{
+  justify-content: left;
+}
+
+.register{
+  justify-content: ;
+}
+
+nav ul{
+  display: flex;
+
+}  */

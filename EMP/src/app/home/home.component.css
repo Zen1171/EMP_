@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the body height to 100% of the viewport height */
+}
+
+.home {
+  width: 80%; /* Set the width of the parent container */
+  text-align: center; /* Center the child content horizontally */
+}
+
+.home img {
+  width: 100%; /* Make the image fill the container's width */
+  height: auto;
+  border-radius: 100px;
+  margin-top: 80px;
+  margin-left: 160px;
+  margin-right: 100px;
+}
