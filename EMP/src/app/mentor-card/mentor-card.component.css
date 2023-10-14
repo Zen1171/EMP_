@@ -1,0 +1,99 @@
+.mentorcard{
+  background-color: white;
+  margin: 40px 27px 0 160px;
+  border-radius: 56px;
+  width: 50%;
+  padding: 60px;
+}
+
+.basic{
+  display: flex;
+  flex-direction: row;
+}
+
+.right{
+  margin-left: 27px;
+  padding-top: 5px;
+}
+
+.bio{
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.name{
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.position1,
+.position2{
+  font-size: 22px;
+}
+
+.logos{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.img1{
+  padding-right: 56px;
+  border-right: 0.5px solid black;
+}
+
+.img2{
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.img3{
+  padding-left: 56px;
+  border-left: 0.5px solid black;
+}
+
+.description{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+#tags{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 101%;
+  padding-bottom: 20px;
+}
+
+#tags p,
+#tags li{
+  font-size: 16px;
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#socials{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.reddit{
+  padding-left: 7px;
+  z-index: 500;
+}
+
+#socials li a{
+  padding: 4px;
+}
+

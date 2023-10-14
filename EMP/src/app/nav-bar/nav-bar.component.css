@@ -8,6 +8,52 @@
   font-style: normal;
 }
 
+/* Original CSS styles */
+
+/* ... (your existing CSS code) ... */
+
+/* Add media query for phones */
+@media screen and (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .links {
+    margin: 20px 0;
+    flex-direction: column;
+  }
+
+  .links li a {
+    margin: 10px 0;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .svg-container {
+    width: 80%; /* Adjust SVG width to fit within the screen */
+    max-width: 200px; /* Set maximum width for larger screens */
+  }
+
+  .text-over-svg a {
+    top: 50%;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Adjust register button styles for smaller screens */
+  .text-over-svg {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-over-svg a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* ... (your existing CSS code) ... */
+
+
 .navbar{
   font-family: Lyyra;
   position: fixed;
@@ -16,34 +62,34 @@
   align-items: center;
   justify-content: space-between;
   background-color: white;
+  z-index: 1;
 }
 
 
 ul{
   list-style-type: none;
-  text-align: center;
 }
 
 img{
   height:4%;
   width:4%;
+  z-index: 10;
 }
 
 .links{
   display: flex;
-  flex-direction: row;
-  padding: 0 5 0 5;
+  margin-left: 100px;
   /* padding: 10 0 10 0; */
 }
 
 .links li a{
-  margin: 40px;
-  font-size: 18px;
+  margin: 50px;
+  font-size: 19px;
 }
 
 .links li a:hover{
   text-decoration: none;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .register{
@@ -60,17 +106,20 @@ img{
   display: inline-block;
 }
 
-.text-over-svg {
+.text-over-svg a{
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   color: white; /* Set the color of the text */
+  text-decoration: none;
 }
 
-
-ul li a{
+.text-over-svg a:hover{
+  opacity: .5;
+}
+.links li a{
   color: #292929;
   text-align: center;
   font-family: Lyyra;
@@ -79,17 +128,6 @@ ul li a{
   font-weight: 700;
   line-height: normal;
   text-decoration-line: underline;
-}
-
-.register a{
-  color: #000000;
-  text-align: center;
-  font-family: Lyyra;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration: none;
 }
 
 /* .container img{
@@ -104,3 +142,63 @@ nav ul{
   display: flex;
 
 }  */
+
+#submenu{
+  left: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+li:hover ul#submenu{
+  padding-top: 45px;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+#submenu li{
+  float: none;
+  padding-bottom: 10px;
+}
+
+#first,
+#second,
+#third{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.subsubmenu{
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  transition: all 0.5s ease;
+  font-size: 14px;
+}
+
+li.sales:hover ul.subsubmenu{
+  padding-top: 45px;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: white;
+  left: 1%;
+}
+
+#fourth,
+#fifth,
+#sixth,
+#seventh{
+  display: flex;
+  flex-direction: column;
+}

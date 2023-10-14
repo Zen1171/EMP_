@@ -1,3 +1,31 @@
+@media screen and (max-width: 768px) {
+  .main-text {
+    font-size: 22px;
+  }
+
+  .from {
+    font-size: 14px;
+  }
+
+  .sub-text .name {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .text-over-svg a {
+    font-size: 16px;
+  }
+
+  .more a {
+    font-size: 14px;
+  }
+}
+
+
+
 body {
   margin: 0;
   display: flex;
@@ -14,8 +42,77 @@ body {
 .home img {
   width: 100%; /* Make the image fill the container's width */
   height: auto;
-  border-radius: 100px;
-  margin-top: 80px;
+  border-radius: 153px;
+  margin-top: 100px;
   margin-left: 160px;
   margin-right: 100px;
+}
+
+.overlay-text{
+  font-family: Lyyra;
+  position: absolute;
+  top: 39%;
+  left: 18%;
+}
+
+.main-text{
+  color: #292929;
+  font-size: 55px;
+  text-align: left;
+}
+
+.from{
+  font-size: 25px;
+}
+
+.sub-text{
+  text-align: left;
+}
+
+.name{
+  font-size: 40px;
+}
+
+.description{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(88, 88, 88);
+}
+
+.buttons{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.svg{
+  justify-content: left;
+}
+
+.text-over-svg a{
+  position: absolute;
+  text-align: left;
+  top: 86.5%;
+  left: 4%;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-over-svg a:hover{
+  opacity: 0.8;
+}
+
+.more a{
+  color: #292929;
+  margin-left: 75px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.more a:hover{
+  text-decoration: none;
+  opacity: 0.5;
 }

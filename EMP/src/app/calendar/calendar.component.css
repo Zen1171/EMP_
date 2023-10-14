@@ -1,0 +1,98 @@
+.calendar{
+  background-color: white;
+  padding: 60px;
+  margin-left: 160px;
+  margin-top: 20px;
+  width: 30%;
+  border-radius: 50px;
+}
+
+.topic{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.button1{
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px 0px 15px 40px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: all 0.25s ease;
+}
+
+.button1:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.months{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.months a{
+  text-decoration: none;
+  color: #292929;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+.cal{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.days{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.day{
+  margin-right: 20px;
+}
+
+.svg{
+  position: relative;
+  margin-right: 11px;
+  margin-bottom: 3px;
+}
+
+.svg a{
+  position: absolute;
+  text-align: center;
+  top: 13%;
+  left: 25%;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+
+.week2{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  color: white;
+  background-color: black;
+  margin: 20px 20px 20px 0;
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+}

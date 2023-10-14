@@ -1,0 +1,92 @@
+.browse{
+  margin-top: 50px;
+  margin-left : 80px;
+  margin-right : 80px;
+  color: #292929;
+}
+
+.work{
+  font-size: 60px;
+  font-family: Lyyra;
+  color: #292929;
+}
+
+.step{
+  display: flex;
+  font-size: 35px;
+  font-family: Lyyra;
+  color: #292929;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.svg{
+  position: relative;
+}
+
+.text-over-svg{
+  position: absolute;
+  color: white;
+  top: 16%;
+  left: 32%;
+  font-size: 20px;
+}
+
+.step-1{
+  display: flex;
+  width: 100%;
+}
+
+.head-1{
+  font-size: 25px;
+  margin-top: 3.5px;
+}
+
+.text-2{
+  margin-left: 10px;
+}
+
+.body-1{
+  font-family: Open Sans;
+  font-size: 18px;
+  width: 95%;
+  text-align: justify;
+}
+.body-2{
+  font-family: Open Sans;
+  font-size: 18px;
+  width: 91%;
+  height: 100%;
+  text-align: justify;
+}
+
+.step-2{
+  display: flex;
+  width: 100%;
+}
+
+.nd_section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.svg-1{
+  position: relative;
+}
+
+.overlay-text a{
+  width: 80%;
+  position: absolute;
+  font-family: Lyyra;
+  color: white;
+  top: 19%;
+  left: 12%;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.overlay-text a:hover{
+  opacity: 0.8;
+}
+

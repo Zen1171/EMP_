@@ -1,0 +1,81 @@
+.topic-body{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.work-1{
+  font-size: 60px;
+  font-family: Lyyra;
+  color: #292929;
+  margin-bottom: 10px;
+}
+
+.search{
+  justify-content: left;
+  align-items: center;
+  padding-left: 18px;
+  padding-top: 18px;
+  width: 583px;
+  height: 66px;
+  border: 2px solid #292929;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.svg-search{
+  position: absolute;
+  top: 164%;
+  left: 11%;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column-1 a,
+.column-2 a,
+.column-3 a,
+.column-4 a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
+  color: black;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.column-1 a:hover,
+.column-2 a:hover,
+.column-3 a:hover,
+.column-4 a:hover{
+  opacity: .5;
+}
+
+.nd_section{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.svg-1{
+  position: relative;
+}
+
+.overlay-text a{
+  position: absolute;
+  font-family: Lyyra;
+  color: white;
+  top: 21%;
+  left: 9%;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.overlay-text a:hover{
+  opacity: 0.8;
+}
