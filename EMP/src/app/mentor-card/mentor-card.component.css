@@ -1,8 +1,13 @@
+.ment{
+  padding-top: 90px;
+  margin: 0px 160px 0 0;
+}
+
 .mentorcard{
   background-color: white;
-  margin: 40px 27px 0 160px;
+  margin: 0px 4px 0 160px;
   border-radius: 56px;
-  width: 50%;
+  width: 80%;
   padding: 60px;
 }
 
@@ -95,5 +100,9 @@
 
 #socials li a{
   padding: 4px;
+}
+
+.imp{
+  display: flex;
 }
 

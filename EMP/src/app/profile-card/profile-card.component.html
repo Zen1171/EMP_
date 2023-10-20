@@ -1,33 +1,42 @@
-<div *ngFor="let desc of details" class="card">
-  <div class="img">
-    <img src="{{desc.imageUrl}}" alt="" height="450px">
-  </div>
-  <div class="desc">
-    <div class="name">
-      {{desc.name}}
+<div class="topic">
+  <h1>Featured Mentors</h1>
+<h4>Get 1:1  advice from one of our features mentors</h4>
+</div>
+
+<div class="prfl">
+  <div *ngFor="let desc of details" class="card">
+    <div class="img">
+      <img src="{{desc.imageUrl}}" alt="" height="450px">
     </div>
-    <div class="position">
-      {{desc.position1}} <br>
-      {{desc.position2}}
-    </div>
-    <div class="description">
-      {{desc.description}}
-    </div>
-    <div class="tags">
-      <ul id="tags">
-        <p><a href="#">{{desc.tags[0]}}</a></p>
-        <li><a href="#">{{desc.tags[1]}}</a></li>
-        <li><a href="#">{{desc.tags[2]}}</a></li>
-        <li><a href="#">{{desc.tags[3]}}</a></li>
-      </ul>
-    </div>
-    <div class="svg">
-      <svg xmlns="http://www.w3.org/2000/svg" width="210" height="60" viewBox="0 0 225 67" fill="none">
-        <path d="M1 44.1122V66C48.0918 66 177.306 65.3367 180.49 65.3367C211 65.3367 224.265 45.4388 224.265 24.8776V1C176.952 1 47.1615 1.54725 43.449 1.66327C22.2245 2.32653 1 12.9388 1 44.1122Z" fill="#292929" stroke="#292929"/>
-      </svg>
-      <div class="overlay-text">
-        <a href="#">View Profile</a>
+    <div class="desc">
+      <div class="name">
+        {{desc.name}}
+      </div>
+      <div class="position">
+        {{desc.position1}} <br>
+        {{desc.position2}}
+      </div>
+      <div class="description">
+        {{desc.description}}
+      </div>
+      <div class="tags">
+        <ul id="tags">
+          <p><a href="#">{{desc.tags[0]}}</a></p>
+          <li><a href="#">{{desc.tags[1]}}</a></li>
+          <li><a href="#">{{desc.tags[2]}}</a></li>
+          <li><a href="#">{{desc.tags[3]}}</a></li>
+        </ul>
+      </div>
+      <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="210" height="60" viewBox="0 0 225 67" fill="none">
+          <path d="M1 44.1122V66C48.0918 66 177.306 65.3367 180.49 65.3367C211 65.3367 224.265 45.4388 224.265 24.8776V1C176.952 1 47.1615 1.54725 43.449 1.66327C22.2245 2.32653 1 12.9388 1 44.1122Z" fill="#292929" stroke="#292929"/>
+        </svg>
+        <div class="overlay-text">
+          <!-- <a href="/mentor-card" (click)="viewprofile(desc.id)">View Profile</a> -->
+          <a href="/mentor-card">View Profile</a>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
