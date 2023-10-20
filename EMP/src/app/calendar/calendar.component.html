@@ -25,7 +25,7 @@
       </div>
       <div class="dates">
         <div class="week">
-          <div class="week2">
+          <!-- <div class="week2">
             <a href="#" class="d"></a>
             <a href="#" class="d"></a>
             <a href="#" class="d"></a>
@@ -40,24 +40,31 @@
                 <a href="#" class="d">1</a>
               </div>
             </div>
+          </div> -->
+          <div class="week1">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
           </div>
           <div class="week2">
             <div *ngFor="let item of array" class="svg">
               <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
               <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
             </div>
+          </div>
+          <div class="week3">
             <div *ngFor="let item of array" class="svg">
               <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
               <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
             </div>
+          </div>
+          <div class="week4">
             <div *ngFor="let item of array" class="svg">
               <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
               <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
             </div>
-            <div *ngFor="let item of array" class="svg">
-              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
-              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
-            </div>
+          </div>
 
 
             <!-- <div class="svg">
@@ -242,18 +249,18 @@
               </svg>
               <a href="#" class="d">31</a>
             </div> -->
+            <!-- <a href="#" class="d"></a>
             <a href="#" class="d"></a>
             <a href="#" class="d"></a>
             <a href="#" class="d"></a>
             <a href="#" class="d"></a>
-            <a href="#" class="d"></a>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
 
       </div>
     </div>
   </div>
   <div class="button2">
-    <button class="book">Book now</button>
+    <button class="book" id="btn2">Book now</button>
   </div>
 </div>
