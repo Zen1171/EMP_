@@ -1,0 +1,16 @@
+<div class="added-slot">
+  <h1>Added Slot</h1>
+  <div class="slots" *ngFor="let time_date of timeanddate">
+    <div class="slot">
+      <div class="date">
+        {{time_date.date}}th October
+      </div>
+      <div class="time">{{time_date.starttime}}-{{time_date.endtime}}</div>
+    </div>
+  </div>
+  <div class="btn">
+    <div class="button2">
+      <button class="book" id="btn2">Edit</button>
+    </div>
+  </div>
+</div>

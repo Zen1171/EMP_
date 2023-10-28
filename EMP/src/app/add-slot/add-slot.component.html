@@ -1,0 +1,73 @@
+<div class="add-slot">
+  <div class="top">
+    <h1>Add a Slot</h1>
+  </div>
+  <div class="down">
+    <div class="down-left">
+      <h2>Date</h2>
+      <div class="cal">
+        <h2>October</h2>
+        <div class="days">
+          <div class="day">MON</div>
+          <div class="day">TUE</div>
+          <div class="day">WED</div>
+          <div class="day">THU</div>
+          <div class="day">FRI</div>
+          <div class="day">SAT</div>
+          <div class="day" id="sun">SUN</div>
+        </div>
+        <div class="dates">
+          <div class="week1">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
+          </div>
+          <div class="week2">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
+          </div>
+          <div class="week3">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
+          </div>
+          <div class="week4">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
+          </div>
+          <div class="week5">
+            <div *ngFor="let item of array" class="svg">
+              <button *ngIf="isInArray2(item.id)" href="#" class="d">{{item.name}}</button>
+              <button *ngIf="!isInArray2(item.id)" href="#" class="dis" disabled>{{item.name}}</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="down-right">
+    <div class="t">
+      <h2>Time</h2>
+      <div class="start-end">
+        <div class="start">
+          <h3>Start</h3>
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+        </div>
+        <div class="end">
+          <h3>End</h3>
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+        </div>
+      </div>
+    </div>
+    <div class="d">
+      <div class="button2">
+        <button class="book" id="btn2">Book now</button>
+      </div>
+    </div>
+  </div>
+</div>

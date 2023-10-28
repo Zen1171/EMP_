@@ -12,6 +12,10 @@ import { ProfileCardComponent } from './profile-card/profile-card.component';
 import { MentorCardComponent } from './mentor-card/mentor-card.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { AddSlotComponent } from './add-slot/add-slot.component';
+import { SlotComponent } from './slot/slot.component';
+import { AddedSlotComponent } from './added-slot/added-slot.component';
+import { ConfirmedSlotComponent } from './confirmed-slot/confirmed-slot.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
     MentorCardComponent,
     CalendarComponent,
     HowItWorksComponent,
+    AddSlotComponent,
+    SlotComponent,
+    AddedSlotComponent,
+    ConfirmedSlotComponent,
   ],
   imports: [
     BrowserModule,

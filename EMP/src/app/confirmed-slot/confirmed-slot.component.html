@@ -1,0 +1,21 @@
+<div class="confirmed">
+  <h1>Confirmed Slot</h1>
+  <div class="slots">
+    <div class="slot" *ngFor="let time_date of timeanddate">
+      <div class="startup">
+        {{time_date.startup}}
+      </div>
+      <div class="timedate">
+        <div class="date">
+        {{time_date.date}}th {{time_date.month}}
+      </div>
+      <div class="time">{{time_date.starttime}}-{{time_date.endtime}}</div>
+      </div>
+    </div>
+    <div class="btn">
+      <div class="button2">
+        <button class="book" id="btn2">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>

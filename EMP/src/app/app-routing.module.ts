@@ -1,3 +1,4 @@
+import { SlotComponent } from './slot/slot.component';
 import { MentorCardComponent } from './mentor-card/mentor-card.component';
 import { TopicsComponent } from './topics/topics.component';
 import { BrowseComponent } from './browse/browse.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'', component:BrowseComponent},
   {path:'', component:TopicsComponent},
   {path: 'profile-card', component: ProfileCardComponent},
-  {path:'mentor-card', component: MentorCardComponent}
+  {path:'mentor-card', component: MentorCardComponent},
+  {path:'slot', component: SlotComponent}
 ];
 
 @NgModule({

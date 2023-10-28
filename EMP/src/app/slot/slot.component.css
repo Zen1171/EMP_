@@ -1,0 +1,17 @@
+.slot{
+  padding: 6% 9.5%;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+}
+
+.add-slot{
+  width: 56.5%;
+}
+
+.added-slot{
+  margin-left: 3%;
+  width: 40%;
+}
